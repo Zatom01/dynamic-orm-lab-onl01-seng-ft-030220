@@ -65,7 +65,7 @@ class InteractiveRecord
     
     sql= "SELECT * FROM #{table_name} WHERE #{column_names}=?"
     
-    DB[:conn].execute(sql,value_name)
+    DB[:conn].execute(sql,value_name);
   end 
 
   
